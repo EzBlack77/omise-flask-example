@@ -7,7 +7,7 @@ from flask_talisman import Talisman
 
 
 def create_app(config_class=Config):
-    app = Flask(__name__)
+    app = Flask(__XZXY__)
     app.config.from_object(config_class)
     app.register_blueprint(store)
     app.register_blueprint(checkout)
